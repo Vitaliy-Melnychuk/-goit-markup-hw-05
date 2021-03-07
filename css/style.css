@@ -40,6 +40,7 @@ a {
 }
 .hover-color:hover, .hover-color:focus {
     color: var(--blue-color);
+    transition: color 250ms linear;
 }
 .location {
     display: flex;
@@ -60,6 +61,7 @@ a {
  }
  a.currentlink {
     color: var(--blue-color);
+    transition: color 250ms linear;
  }
  .currentlink::after {
      position: absolute;
@@ -70,6 +72,7 @@ a {
      height: 4px;
      background-color: var(--blue-color);
      border-radius: 2px;
+     transition: color 250ms linear;
  }
 .logotype-studio {
     font-family: 'Raleway', sans-serif;
@@ -96,6 +99,7 @@ a {
     padding-top: 32px;
     padding-bottom: 32px;
     letter-spacing: 0.02em;
+    transition: color 250ms linear;
 }
 .header-email,
 .header-tel {
@@ -106,22 +110,27 @@ a {
     padding-bottom: 32px;
     align-items: center;
     letter-spacing: 0.02em;
+    transition: color 250ms linear;
 }
 .header-mail-icon {
     fill: #AFB1B8;
     margin-right: 10px;
+    transition: color 250ms linear;
 }
 .header-email:focus .header-mail-icon,
 .header-email:hover .header-mail-icon {
     fill: var(--blue-color);
+    transition: fill 250ms linear;
 }
 .header-tel-icon {
     fill: #AFB1B8;
     margin-right: 10px;
+    transition: color 250ms linear;
 }
 .header-tel:focus .header-tel-icon,
 .header-tel:hover .header-tel-icon {
     fill: var(--blue-color);
+    transition: fill 250ms linear;
 }
 
 .hero {
@@ -277,14 +286,18 @@ a {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    background-color: var(--white-color);
+    transition: background-color 250ms linear;
 }
 .team-icon-link:focus,
 .team-icon-link:hover {
     background-color: var(--blue-color);
+    transition: background-color 250ms linear;
 }
 .team-icon-link:focus .team-icon,
 .team-icon-link:hover .team-icon  {
     fill: var(--white-color);
+    transition: fill 250ms linear;
 }
 .team-list-icon {
     display: flex;
@@ -293,6 +306,7 @@ a {
 .team-icon {
     display: block;
     fill: #AFB1B8;
+    transition: fill 250ms linear;
 }
 
 .client {
@@ -329,6 +343,7 @@ a {
 .client-icon-link:hover {
     border-color: var(--blue-color);
     color: var(--blue-color);
+    transition: color 250ms linear, border-color 250ms linear;
 }
 
 .footer {
@@ -388,10 +403,12 @@ a {
     height: 44px;
     border-radius: 50%;
     fill: var(--white-color);
+    transition: backgound 250ms linear;
 }
 .footer-icon-link:focus,
 .footer-icon-link:hover {
     background-color: var(--blue-color);
+    transition: background-color 250ms linear;
 }
 .footer-icon-item {
     margin-right: 10px;
@@ -467,11 +484,13 @@ a {
     border-radius: 4px;
     padding: 6px 22px;
     letter-spacing: 0.03em;
+    transition: color 250ms linear, background-color 250ms linear;
 }
 .filter-btn:hover, .filter-btn:focus {
     color: var(--white-color);
     background-color: var(--blue-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: color 250ms linear, background-color 250ms linear, box-shadow 250ms linear;
 }
 .project-list {
     flex-flow: row wrap;
@@ -499,6 +518,7 @@ a {
 .project-item-link:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.project-item-link:focus .project-overlay,
 .project-item-link:hover .project-overlay {
     opacity: 0.9;
     top: 0;
