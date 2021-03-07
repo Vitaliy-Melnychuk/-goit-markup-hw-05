@@ -72,7 +72,6 @@ a {
      height: 4px;
      background-color: var(--blue-color);
      border-radius: 2px;
-     transition: color 250ms linear;
  }
 .logotype-studio {
     font-family: 'Raleway', sans-serif;
